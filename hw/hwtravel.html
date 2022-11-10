@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Experience</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;      
+        }
+
+        html,
+        body,
+        .wrapper {
+            width: 100%;
+        }
+
+         body {
+            font-family: 'Roboto', sans-serif;
+        }
+        a {
+            color: rgb(24, 23, 23);
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        .title{
+            font-weight: 400;
+            font-size: 6.6rem;
+            line-height: 1.2;
+            text-transform: uppercase;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            position: absolute;
+            top: 45px;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 130px 80px;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            width: 100%;
+        }
+
+        .card {
+            width: 300px;
+        }
+
+        .card:not(:last-child) {
+            margin-right: 100px;
+        }
+
+        .card:nth-child(2){
+            margin-top: 130px;
+        }
+
+        .subtitle {
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+
+        .text {
+            line-height: 1.5;
+            margin: 1rem 0;
+        }
+        
+        .card:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        figure {
+            line-height: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1 class="title">Travel <br/> Experience</h1>
+        <ul>
+            <li class="card">
+                <figure class="picture">
+                    <img src="https://place-hold.it/300x500"
+                        alt="" width="300">
+                </figure>
+                <h2 class="subtitle">01/</h2>
+                <p class="text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda maiores enim mollitia officiis, repudiandae unde
+                    velit eum cumque minima obcaecati, voluptas rerum accusamus.
+                </p>
+                <a href="#">Read more &#10141;</a>
+            </li>
+            <li class="card">
+                <figure class="picture">
+                    <img src="https://place-hold.it/300x500"
+                        alt="" width="300">
+                </figure>
+                <h2 class="subtitle">02/</h2>
+                <p class="text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda maiores enim mollitia officiis, repudiandae unde velit eum cumque minima obcaecati, voluptas rerum accusamus.
+                </p>
+                <a href="#">Read more &#10141;</a>
+            </li>
+            <li class="card">
+                <figure class="picture">
+                    <img src="https://place-hold.it/300x500"
+                        alt="" width="300">
+                </figure>
+                <h2 class="subtitle">03/</h2>
+                <p class="text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda maiores enim mollitia officiis, repudiandae unde
+                    velit eum cumque minima obcaecati, voluptas rerum accusamus.
+                </p>
+                <a href="#">Read more &#10141;</a>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

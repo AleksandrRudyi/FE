@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 70px;
+        box-sizing: border-box;
+      }
+      html,
+      body,
+      .wrapper {
+        height: 100%;
+      }
+      .wrapper > .sidebar, .header, .banner {
+        background: rgba(61, 197, 90, 0.737);
+      }
+      .wrapper > .menu, .centr2, .centr3 {
+        background: rgb(218, 40, 16);
+      }
+      .wrapper > .centr1, .centr4 {
+        background: rgb(241, 139, 5);
+      }
+    .wrapper {
+      display: grid;
+        grid-template-rows: repeat(3, 150px);
+        grid-template-columns: repeat(4, 300px);
+        grid-template-areas:
+        "sidebar header header menu"
+        "sidebar centr2 centr4 banner"
+        "sidebar centr3 centr1 banner";
+        gap: 15px;
+        justify-content: center;
+      }
+      .sidebar {
+        grid-area: sidebar;
+      }
+      .header {
+        grid-area: header;
+      }
+      .menu {
+        grid-area: menu;
+      }
+      .banner {
+        grid-area: banner;
+      }
+      .main1 {
+        grid-area: centr1;
+      }
+      .main2 {
+        grid-area: centr2;
+      }
+      .main3 {
+        grid-area: centr3;
+      }
+      .main4 {
+        grid-area: centr4;
+      }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar"></div>
+        <div class="header"></div>
+        <div class="menu"></div>
+        <div class="banner"></div>
+        <div class="centr1"></div>
+        <div class="centr2"></div>
+        <div class="centr3"></div>
+        <div class="centr4"></div>
+      </div> 
+</body>
+</html>
