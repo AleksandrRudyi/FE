@@ -7,59 +7,71 @@
     <title>Smart</title>
 
     <style>
-      @media (max-width: 768px) {
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-        .wrapper {
-          display: flex;
-          background: blue;
-        }
-        html,
-        body,
-        .wrapper {
-          height: 100%;
-          border-radius: 20px;
-          padding: 10px;
-          flex-direction: column;
-        }
-        .main-h{
-            font-size: 70px;
-            color: white;
-            margin-top: 140px;
-        }
-        .paragraf{
-            font-size: 30px;
-            color: white;
-            margin-top: 30px;
-        }
-        button{
-            border-radius: 10px;
-            padding: 10px;
-            margin-top: 40px;
-            
-        }
-        .new{
-            background: white;
-            color:blue;
-            padding: 10px;
-            border-radius: 30px;
-        }
-        .sign{
-            background: blue;
-            color:white;
-            padding: 10px;
-            border-radius: 30px; 
-        }
-        .icon{
-            color: white;
-        }
-        .icon1{
-            color: blue;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap");
 
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        display: flex;
+        background: blue;
+        background-image: url(/classwork/css/PngItem_52405.png);
+        background-position: bottom;
+        background-size: cover;
+      }
+      html,
+      body,
+      .wrapper {
+        height: 100%;
+        border-radius: 20px;
+        padding: 10px;
+        flex-direction: column;
+        font-family: "Sono", sans-serif;
+      }
+      .main-h {
+        font-size: 60px;
+        color: white;
+        margin-top: 140px;
+      }
+      .paragraf {
+        font-size: 20px;
+        color: white;
+        margin-top: 30px;
+      }
+      button {
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 50px;
+        border: 2px solid #fdfdfd;
+      }
+      .new {
+        background: white;
+        color: blue;
+        padding: 15px 50px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+      .sign {
+        background: blue;
+        color: white;
+        padding: 15px 35px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+
+      .icon {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border: none;
+      }
+      .icon1 {
+        color: blue;
+        text-decoration: none;
+        font-weight: bold;
+        border: none;
       }
     </style>
   </head>
@@ -67,16 +79,20 @@
     <div class="wrapper">
       <h1 class="main-h">Smart Insurance here!</h1>
       <p class="paragraf">Find all your needs faster than ever</p>
-      <button class="new">
-        <i>
-          <a class="icon1" href="">New Account</a>
-        </i>
-      </button>
-      <button class="sign">
-        <i>
-          <a class="icon" href="">Sign In</a>
-        </i>
-      </button>
+      <div>
+        <button class="new">
+          <i>
+            <a class="icon1" href="">New Account</a>
+          </i>
+        </button>
+      </div>
+      <div>
+        <button class="sign">
+          <i>
+            <a class="icon" href="">Sign In</a>
+          </i>
+        </button>
+      </div>
     </div>
   </body>
 </html>

@@ -18,6 +18,7 @@
         font-family: "Lato", sans-serif;
         display: flex;
         justify-content: center;
+        background: rgb(229, 208, 233);
       }
       * {
         margin: 0;
@@ -31,20 +32,21 @@
       }
       .wrapper {
         display: grid;
-        grid-template-columns: 200px auto 200px;
+        grid-template-columns: 200px auto 350px;
         width: 1200px;
       }
       .sidebar {
-        background: gold;
+        background: white;
       }
       main {
-        background: rgb(191, 197, 199);
+        background: white;
       }
       .userbar {
-        background: green;
+        background: white;
       }
       .search {
-        box-shadow: rgb(180, 169, 169);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         width: 300px;
         border-radius: 20px;
         padding-left: 10px;
@@ -61,23 +63,380 @@
         font-size: 1.5rem;
         color: gray;
       }
+      .head {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        margin-left: 25px;
+      }
+      .head1 {
+        display: flex;
+      }
+      .bell {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border: none;
+      }
+      .new {
+        display: flex;
+        margin-top: 20px;
+      }
+      .guest {
+        display: flex;
+      }
+      .course {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+      .academy {
+        display: flex;
+        padding-bottom: 50px;
+        padding-top: 20px;
+        margin-left: 25px;
+      }
+      .sidelist {
+        display: flex;
+        padding-bottom: 22px;
+        cursor: pointer;
+        margin-left: 25px;
+      }
+      .profile {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        margin-left: 25px;
+      }
+      .pen {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border: none;
+      }
+      .avatar {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+      }
+      .name {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
+      .cal {
+        width: 320px;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-left: 25px;
+      }
+      li {
+        list-style: none;
+        width: calc(100% / 7);
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+      }
+      .is-bold {
+        font-weight: 600;
+      }
+      .may {
+        margin-left: 25px;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .hwp {
+        display: flex;
+        padding-top: 20px;
+        margin-left: 25px;
+      }
+      .progress {
+        padding-top: 20px;
+        margin-left: 25px;
+        display: block;
+        cursor: pointer;
+      }
+      .leftprofile {
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+      }
+      .my-courses {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+      }
+      .head-courses{
+        
+      }
+      .list-courses{
+        display: flex;
+        justify-content: space-between;
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <aside class="sidebar"></aside>
+      <aside class="sidebar">
+        <div class="academy">
+          <a href="">
+            <i class="lab la-readme"></i>
+          </a>
+          <h4>Academy</h4>
+        </div>
+        <div class="sidelist">
+          <a href="">
+            <i class="las la-exclamation-circle"></i>
+          </a>
+          <h4>Dashboard</h4>
+        </div>
+        <div class="sidelist">
+          <a href="">
+            <i class="las la-toolbox"></i>
+          </a>
+          <h4>Courses</h4>
+        </div>
+        <div class="sidelist">
+          <a href="">
+            <i class="las la-comment-alt"></i>
+          </a>
+          <h4>Chats</h4>
+        </div>
+        <div class="sidelist">
+          <a href="">
+            <i class="las la-calendar-check"></i>
+          </a>
+          <h4>Grades</h4>
+        </div>
+        <div class="sidelist">
+          <a href="">
+            <i class="las la-calendar"></i>
+          </a>
+          <h4>Schedule</h4>
+        </div>
+        <div class="sidelist">
+          <a href="">
+            <i class="las la-cog"></i>
+          </a>
+          <h4>Settings</h4>
+        </div>
+        <div>
+          <div class="leftprofile">
+            <img src="https://via.placeholder.com/170x250" alt="" />
+          </div>
+          <div>
+            <h4>Premium subscription</h4>
+          </div>
+          <div>
+            <p>Buy Premium and get access to new courses</p>
+          </div>
+          <div>
+            <button>More detailed</button>
+          </div>
+        </div>
+      </aside>
 
       <main>
-        <div class="search">
-          <span class="search__icon">
-            <i class="las la-search"></i>
-          </span>
+        <header class="head">
+          <h1>Dashboard</h1>
+          <div class="head1">
+            <div class="search">
+              <span class="search__icon">
+                <i class="las la-search"></i>
+              </span>
 
-          <input type="text" class="search__input" placeholder="Search" />
+              <input type="text" class="search__input" placeholder="Search" />
+            </div>
+
+            <button class="bell">
+              <a href="">
+                <i class="las la-bell"></i>
+              </a>
+            </button>
+          </div>
+        </header>
+        <section class="new">
+          <h2>New Courses</h2>
+        </section>
+        <div class="course">
+          <div>
+            <div class="geo">
+              <figure>
+                <img src="https://via.placeholder.com/170x120" alt="" />
+              </figure>
+              <h4>Geography</h4>
+              <p>12 lessons</p>
+              <div class="guest">
+                <figure>
+                  <img src="https://via.placeholder.com/30" alt="" />
+                  <img src="https://via.placeholder.com/30" alt="" />
+                  <img src="https://via.placeholder.com/30" alt="" />
+                </figure>
+                <button>
+                  <i class="las la-angle-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="java">
+              <figure>
+                <img src="https://via.placeholder.com/170x120" alt="" />
+              </figure>
+              <h4>JavaScript Course</h4>
+              <p>15 lessons</p>
+              <div class="guest">
+                <figure>
+                  <img src="https://via.placeholder.com/30" alt="" />
+                  <img src="https://via.placeholder.com/30" alt="" />
+                  <img src="https://via.placeholder.com/30" alt="" />
+                </figure>
+                <button>
+                  <i class="las la-angle-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="photo">
+              <figure>
+                <img src="https://via.placeholder.com/170x120" alt="" />
+              </figure>
+              <h4>Photography Course</h4>
+              <p>8 lessons</p>
+              <div class="guest">
+                <figure>
+                  <img src="https://via.placeholder.com/30" alt="" />
+                  <img src="https://via.placeholder.com/30" alt="" />
+                  <img src="https://via.placeholder.com/30" alt="" />
+                </figure>
+                <button>
+                  <i class="las la-angle-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+        <div>
+          <div class="my-courses">
+            <h2>My Courses</h2>
+            <a href="">Viev All</a>
+          </div>
+        </div>
+        <section>
+          <div class="head-courses">
+            <ul class="list-courses">
+              <li class="name-course">Course name</li>
+              <li class="start">Start</li>
+              <li class="rate">Rate</li>
+              <li class="level">Level</li>
+            </ul>
+          </div>
+        </section>
       </main>
 
-      <div class="userbar"></div>
+      <div class="userbar">
+        <div class="profile">
+          <h2>Profile</h2>
+          <button class="pen">
+            <a href="">
+              <i class="las la-edit"></i>
+            </a>
+          </button>
+        </div>
+        <div>
+          <figure class="avatar">
+            <img src="https://via.placeholder.com/80x80" alt="" />
+          </figure>
+        </div>
+        <div class="name">
+          <h4>Esther Howard</h4>
+          <a href="">
+            <i class="las la-check-circle"></i>
+          </a>
+        </div>
+        <section class="cal">
+          <div class="may">
+            <h3>May 2022</h3>
+            <a href="">
+              <i class="las la-angle-left"></i>
+            </a>
+            <a href="">
+              <i class="las la-angle-right"></i>
+            </a>
+          </div>
+          <ul>
+            <li class="is-bold">Sun</li>
+            <li class="is-bold">Mon</li>
+            <li class="is-bold">Tue</li>
+            <li class="is-bold">Wed</li>
+            <li class="is-bold">Thu</li>
+            <li class="is-bold">Fri</li>
+            <li class="is-bold">Sat</li>
+
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+            <li>32</li>
+            <li>33</li>
+            <li>34</li>
+            <li>35</li>
+          </ul>
+        </section>
+        <div class="hwp">
+          <h2>Homework progress</h2>
+        </div>
+        <div class="progress">
+          <h4>Styling with CSS</h4>
+          <p>12 tasks</p>
+        </div>
+        <div class="progress">
+          <h4>Basik of programming</h4>
+          <p>18 tasks</p>
+        </div>
+        <div class="progress">
+          <h4>Learn to Programm in Java</h4>
+          <p>10 tasks</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
